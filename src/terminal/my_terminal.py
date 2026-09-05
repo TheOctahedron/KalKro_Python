@@ -1,4 +1,4 @@
-from commands import find_command
+from commands.commands_storage import find_command
 
 a = "[TERMINAL]: "
 b = "\n[YOU]: "
