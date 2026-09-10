@@ -1,4 +1,4 @@
-from commands_functions import hello_world, about_kalkro, random_100
+from terminal.commands.commands_functions import hello_world, about_kalkro, random_100
 
 system_commands = [
     {"command": "!hello world!", "function": hello_world},
