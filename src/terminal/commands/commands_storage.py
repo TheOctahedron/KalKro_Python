@@ -1,9 +1,9 @@
 from commands_functions import hello_world, about_kalkro, random_100
 
 system_commands = [
-    {"command": "!HELLO WORLD!", "function": hello_world},
-    {"command": "!ABOUT KALKRO!", "function": about_kalkro},
-    {"command": "!RANDOM 100!", "function": random_100}
+    {"command": "!hello world!", "function": hello_world},
+    {"command": "!about kalkro!", "function": about_kalkro},
+    {"command": "!random 100!", "function": random_100}
 ]
 
 def help_me():
@@ -15,6 +15,6 @@ def find_command(cmd):
     for system_command in system_commands:
         if cmd == system_command['command']:
             return system_command['function']()
-        elif cmd == "!HELP ME!":
+        elif cmd == "!help me!":
             return help_me() 
     return "Command Is Not Found. Write '!HELP ME!'."
