@@ -1,9 +1,7 @@
-from terminal.commands.commands_storage import find_command
+from utilities.terminal_utilities.terminal_tags import a, b
+from terminal.terminal_actions.get_command import get_command
 
-a = "[TERMINAL]: "
-b = "\n[YOU]: "
-
-def my_terminal():
+def welcome_to_terminal():
     print(f"{a}Welcome to KalKro.")
     while True:
         cmd = input(f"\n{a}Press F to open File Explorer.{b}").strip().lower()
@@ -11,5 +9,6 @@ def my_terminal():
             case "f":
                 pass
             case _:
-                find_command(cmd)
+                answer = get_command(None, cmd)
+                print(answer)
                 continue
