@@ -9,12 +9,3 @@ system_commands = [
 def help_me():
     for number, system_command in enumerate(system_commands, 1):
         print(f"{number} {system_command['command']}")
-        
-
-def find_command(cmd):
-    for system_command in system_commands:
-        if cmd == system_command['command']:
-            return system_command['function']()
-        elif cmd == "!help me!":
-            return help_me() 
-    return "Command Is Not Found. Write '!HELP ME!'."
