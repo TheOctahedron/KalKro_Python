@@ -1,15 +1,20 @@
 """ 
 {
-"name": "Name", 
-"type": ".folder", 
-"content": [
-    {"name": "hello", 
-    "type": ".txt", 
-    "content": [
-        "Hello, World."
-    ]
+"name": "Name",
+"type": ".folder",
+"id": "123",
+
+"entries": [
+    {
+        "name": "hello", 
+        "type": ".txt", 
+        "id": "321",
+
+        "content": [
+            "Hello, World."
+        ]
     }
-    ]
+]
 }
 """
 
