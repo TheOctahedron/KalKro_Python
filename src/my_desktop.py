@@ -1,3 +1,3 @@
-from terminal.my_terminal import my_terminal
+from terminal.welcome_to_terminal import welcome_to_terminal
 def my_desktop():
-    my_terminal()
+    welcome_to_terminal()
