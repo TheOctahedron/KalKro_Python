@@ -20,10 +20,9 @@ def get_command(obj, cmd): # object, command
     else:
         print(f"{b}COMMAND: {cmd}")
 
-    
-    if obj is None and cmd is not None:
+    if obj is None: 
         return find_command(cmd, None)
     
-    elif obj is not None and cmd is not None:
+    elif obj is not None:
         return find_command(cmd, obj)
     
