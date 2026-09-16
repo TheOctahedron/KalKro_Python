@@ -11,7 +11,7 @@ def get_command(obj, cmd): # object, command
 
     if cmd is None:
         print(f"{a}COMMAND: None")
-        return f"{b}{terminal_errors[2]}" # ERROR: Command is None.
+        return f"{b}{terminal_errors[0]['command_errors'][2]}" # ERROR: Command is None.
     else:
         print(f"{a}COMMAND: {cmd}")
 
