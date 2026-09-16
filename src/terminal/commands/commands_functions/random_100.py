@@ -1,0 +1,4 @@
+import random
+
+def random_100():
+    return random.randint(1, 100)
