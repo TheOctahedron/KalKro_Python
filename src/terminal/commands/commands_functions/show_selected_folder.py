@@ -1,4 +1,4 @@
-from file_explorer.shorcuts_structure import folders
+from utilities.explorer_utilities.folders import folders
 from utilities.terminal_utilities.terminal_errors import terminal_errors
 
 
