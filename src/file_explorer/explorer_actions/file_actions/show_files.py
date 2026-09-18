@@ -1,4 +1,4 @@
-from utilities.explorer_utilities.folders import folders
+from utilities.folders import folders
 
 def show_files(selected_folder):
     print(f"SELECTED FOLDER: {selected_folder['name']}")
