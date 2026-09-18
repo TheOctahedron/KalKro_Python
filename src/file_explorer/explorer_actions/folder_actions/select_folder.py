@@ -1,5 +1,5 @@
 from utilities.user_input import user_input
-from utilities.explorer_utilities.folders import folders
+from utilities.folders import folders
 
 def select_folder():
     """
