@@ -18,7 +18,7 @@ def my_explorer():
 
             case "1":
                 selected_folder = select_folder() # Provide the option to select a folder.
-                folder_id = get_command(selected_folder, "!show selected folder!")
+                folder_id = get_command(selected_folder, "!show id!")
                 print(folder_id)
 
                 show_files(selected_folder) # Show all files in the selected folder.
