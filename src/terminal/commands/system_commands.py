@@ -1,4 +1,6 @@
-from terminal.commands.commands_functions import hello_world, about_kalkro, random_100, show_id, enter_id
+from terminal.commands.commands_functions import hello_world, about_kalkro, random_100
+
+from terminal.commands.commands_functions.id_commands import show_id, enter_id
 
 
 system_commands = [
