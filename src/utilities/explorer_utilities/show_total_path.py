@@ -3,11 +3,11 @@ total_path = []
 
 def show_total_path(part, type, position):
     """
-    'folder'/'subfolder' have a '/' guide sign
+    'folder' have a '/' guide sign
     Other types of objects are marked with a dot and the name of the type.
     """
     match type:
-        case "folder", "subfolder":
+        case "folder":
            part += "/" 
         case _:
             part += type
