@@ -4,7 +4,7 @@
 "type": ".folder",
 "id": "123",
 
-"entries": [
+"content": [
     {
         "name": "hello", 
         "type": ".txt", 
