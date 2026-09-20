@@ -1,4 +1,4 @@
-from file_explorer.explorer_actions.folder_actions.show_folders import show_folders
+from file_explorer.explorer_actions.folder_actions.show_folders import system_folders
 from file_explorer.explorer_actions.folder_actions.select_folder import select_folder
 from terminal.terminal_actions.get_command import get_command
 from file_explorer.explorer_actions.file_actions.show_files import show_files
@@ -6,7 +6,7 @@ from utilities.user_input import user_input
 
 def my_explorer():
     print("EXPLORER\n\n")
-    show_folders() # Showing all folders
+    system_folders() # Showing all system folders
     while True:
         print("\n\nACTIONS IN FILE EXPLORER:")
         print("(0) Exit. (to Terminal)")
