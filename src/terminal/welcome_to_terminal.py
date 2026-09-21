@@ -5,7 +5,7 @@ from file_explorer.my_explorer import my_explorer
 def welcome_to_terminal():
     print(f"{a}Welcome to KalKro.")
     while True:
-        cmd = input(f"\n{a}Press F to open File Explorer.{b}").strip().lower()
+        cmd = input(f"\n{a}Press F to open File Explorer.\n{b}").strip().lower()
         match cmd:
             case "f":
                 my_explorer()
