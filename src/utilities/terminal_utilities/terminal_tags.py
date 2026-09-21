@@ -1,2 +1,2 @@
 a = "[TERMINAL]: "
-b = "\n[YOU]: "
+b = "[YOU]: "
