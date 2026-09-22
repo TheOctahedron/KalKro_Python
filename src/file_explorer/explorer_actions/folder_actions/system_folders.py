@@ -9,6 +9,6 @@ def system_folders():
         print("\n\nSYSTEM FOLDERS:")
         for number, folder in enumerate(folders, 1):
             print(f"[{number}] {folder['name']}")
-        print("\nEND OF FOLDERS.")
+        print("\nEND OF SYSTEM FOLDERS.")
         break
     return folders 
