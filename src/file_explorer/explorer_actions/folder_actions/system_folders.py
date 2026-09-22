@@ -11,4 +11,4 @@ def system_folders():
             print(f"[{number}] {folder['name']}")
         print("\nEND OF FOLDERS.")
         break
-    return
+    return folders 
