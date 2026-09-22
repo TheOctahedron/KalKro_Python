@@ -1,4 +1,4 @@
-from utilities.terminal_utilities.terminal_tags import b
+from utilities.terminal_utilities.terminal_tags import a, b
 """
 a = [TERMINAL]:
 b = [YOU]:
@@ -16,7 +16,8 @@ def get_command(obj, cmd): # object, command
 
     if cmd is None:
         print(f"{b}COMMAND: None")
-        return f"{terminal_errors[0]['command_errors'][2]}" # ERROR: Command is None.
+        print(f"{a}{terminal_errors[0]['command_errors'][2]}") # ERROR: Command is None.
+        return 0
     else:
         print(f"{b}COMMAND: {cmd}")
 
