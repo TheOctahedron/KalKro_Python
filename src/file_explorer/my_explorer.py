@@ -1,13 +1,17 @@
-from file_explorer.explorer_actions.folder_actions.show_folders import system_folders
-from file_explorer.explorer_actions.folder_actions.select_folder import select_folder
-from terminal.terminal_actions.get_command import get_command
-from file_explorer.explorer_actions.file_actions.show_files import show_files
 from utilities.user_input import user_input
+from file_explorer.explorer_actions.object_actions.show_object_content import show_object_content
+from file_explorer.explorer_actions.object_actions.run_objects_selection import run_objects_selection
+from utilities.explorer_utilities.folders import folders
 
 def my_explorer():
-    print("EXPLORER\n\n")
-    system_folders() # Showing all system folders
     while True:
+        print("EXPLORER\n\n")
+        system_folders = {
+            "name": "SYSTEM FOLDERS",
+            "content": folders,
+            "type": ".folder"
+        }
+        show_object_content(system_folders) # Showing all system folders
         print("\n\nACTIONS IN FILE EXPLORER:")
         print("(0) Exit. (to Terminal)")
         print("(1) Select Folder and File.")
@@ -17,13 +21,7 @@ def my_explorer():
                 return # Leave to Terminal.
 
             case "1":
-                selected_folder = select_folder() # Provide the option to select a folder.
-                folder_id = get_command(selected_folder, "!show id!")
-                print(folder_id)
-
-                show_files(selected_folder) # Show all files in the selected folder.
-                # TODO: write function select_file
-                continue
+                run_objects_selection(system_folders)
 
             case _:
                 print("Action Number Is not Found.")
