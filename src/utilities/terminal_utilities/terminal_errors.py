@@ -5,6 +5,9 @@ terminal_errors = [{
     },
     "object_errors": {
         1: "ERROR: Object is not Found.",
-        2: "ERROR: Required Object is None."
+        2: "ERROR: Required Object is None.",
+    },
+    "id_errors": {
+        1: "ERROR: The ID cannot be equal to 0."
     }
 }]
