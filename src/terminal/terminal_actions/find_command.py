@@ -1,4 +1,4 @@
-from terminal.commands.system_commands import system_commands, help_me
+from terminal.terminal_commands.system_commands import system_commands, help_me
 
 def find_command(cmd, obj):
     for system_command in system_commands:
