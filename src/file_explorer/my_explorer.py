@@ -15,7 +15,7 @@ def my_explorer():
         print("\n\nACTIONS IN FILE EXPLORER:")
         print("(0) Exit. (to Terminal)")
         print("(1) Select Folder and File.")
-        answer = user_input("\n\nEnter the number of the selected action") 
+        answer = str(user_input("\n\nEnter the number of the selected action"))
         match answer:
             case "0":
                 return # Leave to Terminal.

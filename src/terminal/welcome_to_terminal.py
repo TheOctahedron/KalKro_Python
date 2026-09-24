@@ -9,6 +9,7 @@ def welcome_to_terminal():
         match cmd:
             case "f":
                 my_explorer()
+                continue
             case _:
                 answer = get_command(None, cmd)
                 print(answer)
