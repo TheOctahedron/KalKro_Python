@@ -8,6 +8,7 @@ terminal_errors = [{
         2: "ERROR: Required Object is None.",
     },
     "id_errors": {
-        1: "ERROR: The ID cannot be equal to 0."
+        1: "ERROR: The ID cannot be equal to 0.",
+        2: "ERROR: The ID must can contain only numbers and points."
     }
 }]
